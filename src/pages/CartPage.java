@@ -33,21 +33,6 @@ public class CartPage
 	Assert.assertEquals(driver.findElement(productName(actual)).getText(), expected.getProductName());
 	Assert.assertEquals(ExtractNumber.extractPriceDouble(driver.findElement(productPrice(actual)).getText()), pretCalculat);	
   }
-
-  public void clickCheckout()
-  {
-	  driver.findElement(checkoutButton).click();
-  }
-  
-  public void clickRemoveFromCart()
-  {
-	  driver.findElement(removeButton).click();	  
-  }
-
-  public String getHeaderTitle()
-  {
-	  return driver.findElement(pageId).getText();
-  }
   
   public void clickCheckoutButton()
   {
